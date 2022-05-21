@@ -221,6 +221,7 @@ p[subs] {
 }
 .repertoire-menu__item--parent {
   position: relative;
+  margin-top: 20px;
 }
 .repertoire-menu__item--child li {
   position: relative;
