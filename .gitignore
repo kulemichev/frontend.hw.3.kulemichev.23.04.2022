@@ -1,0 +1,8 @@
+# исключаем папки
+.idea/
+.vscode/
+__MACOSX/
+node_modules/
+
+# исключаем файлы
+.DS_Store
