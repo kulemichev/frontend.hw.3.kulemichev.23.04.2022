@@ -17,9 +17,6 @@
 </head>
 
 <body>
-
-  <div class="wallpaper"></div>
-
   <header class="header">
     <div class="container">
       <ul class="navbar-list">
@@ -35,108 +32,106 @@
     </div>
   </header>
 
-  <div class="container content">
-    <form action="register.php" method="GET">
-      <fieldset>
-        <legend>#1 Общая информация</legend>
-        <div>
-          <label for="name">Имя</label>
-          <input name="name" id="name" type="text" placeholder="Имя" minlength="3" maxlength="12" required>
-        </div>
-        <div>
-          <label for="lastname">Фамилия</label>
-          <input name="lastname" id="lastname" type="text" placeholder="Фамилия" minlength="3" maxlength="12" required>
-        </div>
-        <div>
-          <label for="patronymic">Отчество</label>
-          <input name="patronymic" id="patronymic" type="text" placeholder="Отчество" minlength="3" maxlength="12"
-            required>
-        </div>
-        <div>
-          <label for="file">Добавить фотографию:</label>
-          <input id="file" name="file" type="file">
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="email">
-        </div>
-        <div>
-          <label for="password">Пароль</label>
-          <input name="psw" id="password" type="password" placeholder="пароль" minlength="3" maxlength="12">
-        </div>
-        <div>
-          <label for="url">Адрес сайта</label>
-          <input id="url" name="url" type="url" value="http://mysite.name">
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>#2 Укажите свой пол</legend>
-        <div>
-          <input id="male" type="radio" name="gender" value="male" checked>
-          <label for="male">Мужской</label>
-        </div>
-        <div>
-          <input id="female" type="radio" name="gender" value="female" checked>
-          <label for="female">Женский</label>
-        </div>
-
-        <div>
-          <label for="date">Дата рождения</label>
-          <input id="date" type="date">
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>#3 Выберете предпочитаемые вами кухни мира</legend>
-        <div>
-          <input id="ua" type="checkbox" name="kit" value="ua">
-          <label for="ua">Украинская</label>
-        </div>
-        <div>
-          <input id="gr" type="checkbox" name="kit" value="gr">
-          <label for="gr">Грузинская</label>
-        </div>
-        <div>
-          <input id="it" type="checkbox" name="kit" value="it">
-          <label for="it">Итальянская</label>
-        </div>
-        <div>
-          <input id="jp" type="checkbox" name="kit" value="jp">
-          <label for="jp">Японская</label>
-        </div>
-        <div>
-          <input id="md" type="checkbox" name="kit" value="md">
-          <label for="md">Молдавская</label>
-        </div>
-        <div>
-          <input id="vg" type="checkbox" name="kit" value="vg" disabled>
-          <label for="vg">Вегитарианская</label>
-        </div>
-        <div>
-          <input id="ru" type="checkbox" name="kit" value="ru">
-          <label for="ru">Русская</label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>#4 Напишите о себе</legend>
-        <label for="txt"></label>
-        <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Введите текст..."></textarea>
-      </fieldset>
-
-      <fieldset>
-        <legend>#5 Кнопки управления формой</legend>
-        <button type="submit">Зарегистрироваться</button>
-        <button type="reset">Очистить форму</button>
-      </fieldset>
-    </form>
-  </div>
+  <main class="registration-container">
+    <div class="container content">
+      <div class="wallpaper"></div>
+      <form action="register.php" method="GET">
+        <fieldset>
+          <legend>#1 Общая информация</legend>
+          <div>
+            <label for="name">Имя</label>
+            <input name="name" id="name" type="text" placeholder="Имя" minlength="3" maxlength="12" required>
+          </div>
+          <div>
+            <label for="lastname">Фамилия</label>
+            <input name="lastname" id="lastname" type="text" placeholder="Фамилия" minlength="3" maxlength="12"
+              required>
+          </div>
+          <div>
+            <label for="patronymic">Отчество</label>
+            <input name="patronymic" id="patronymic" type="text" placeholder="Отчество" minlength="3" maxlength="12"
+              required>
+          </div>
+          <div>
+            <label for="file">Добавить фотографию:</label>
+            <input id="file" name="file" type="file">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="email">
+          </div>
+          <div>
+            <label for="password">Пароль</label>
+            <input name="psw" id="password" type="password" placeholder="пароль" minlength="3" maxlength="12">
+          </div>
+          <div>
+            <label for="url">Адрес сайта</label>
+            <input id="url" name="url" type="url" value="http://mysite.name">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>#2 Укажите свой пол</legend>
+          <div>
+            <input id="male" type="radio" name="gender" value="male" checked>
+            <label for="male">Мужской</label>
+          </div>
+          <div>
+            <input id="female" type="radio" name="gender" value="female" checked>
+            <label for="female">Женский</label>
+          </div>
+          <div>
+            <label for="date">Дата рождения</label>
+            <input id="date" type="date">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>#3 Выберете предпочитаемые вами кухни мира</legend>
+          <div>
+            <input id="ua" type="checkbox" name="kit" value="ua">
+            <label for="ua">Украинская</label>
+          </div>
+          <div>
+            <input id="gr" type="checkbox" name="kit" value="gr">
+            <label for="gr">Грузинская</label>
+          </div>
+          <div>
+            <input id="it" type="checkbox" name="kit" value="it">
+            <label for="it">Итальянская</label>
+          </div>
+          <div>
+            <input id="jp" type="checkbox" name="kit" value="jp">
+            <label for="jp">Японская</label>
+          </div>
+          <div>
+            <input id="md" type="checkbox" name="kit" value="md">
+            <label for="md">Молдавская</label>
+          </div>
+          <div>
+            <input id="vg" type="checkbox" name="kit" value="vg" disabled>
+            <label for="vg">Вегитарианская</label>
+          </div>
+          <div>
+            <input id="ru" type="checkbox" name="kit" value="ru">
+            <label for="ru">Русская</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>#4 Напишите о себе</legend>
+          <label for="txt"></label>
+          <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Введите текст..."></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>#5 Кнопки управления формой</legend>
+          <button type="submit">Зарегистрироваться</button>
+          <button type="reset">Очистить форму</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
 
   <footer class="footer">
-    <div class="container">&copy;2022</div>
+    <div class="footer-container">&copy</div>
   </footer>
-
 </body>
 
 </html>

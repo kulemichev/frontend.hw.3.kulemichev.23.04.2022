@@ -4,24 +4,63 @@
 body {
   margin: 0;
 }
+h1 {
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: orangered;
+  text-align: center;
+}
+h2,
+h2 a {
+  padding-left: 15px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: yellow;
+}
+p,
+a,
+h3,
+ol,
+ul,
+li {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+h4 {
+  padding-left: 15px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+span a {
+  color: lightskyblue;
+  font-style: italic;
+}
+.comments {
+  font-style: italic;
+  text-decoration: underline;
+}
+h2 #back2top {
+  padding-top: 100px;
+}
 .header {
   display: block;
   position: fixed;
   top: 0;
-  /* height: 50px; */
   width: 100vw;
   text-align: center;
   background-color: orangered;
   z-index: 1;
 }
-
 .container {
   width: 100%;
   max-width: 1280px;
-
   padding-left: 20px;
   padding-right: 20px;
-  /* margin: auto; */
   position: relative;
 }
 .bg-poster {
@@ -33,11 +72,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* height: 100vh;
-  width: 100vw; */
   background-image: url(/assets/img/01.jpeg);
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-size: cover;
   background-position: center;
 }
@@ -49,7 +85,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-
   background-image: url(/assets/img/brick-texture.png);
   background-size: 500px;
   background-repeat: repeat;
@@ -68,7 +103,6 @@ body {
   margin-bottom: 10px;
 }
 .navbar-link {
-  /* padding: 1em; */
   display: block;
   margin: 10px;
   text-transform: uppercase;
@@ -80,69 +114,15 @@ body {
   transform: scale(1.2);
 }
 
-h1 {
-  /* padding: 30px; */
-  font-size: 36px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  color: orangered;
-  text-align: center;
-}
-
-h2,
-h2 a {
-  padding-left: 15px;
-  /* padding-top: 120px; */
-  font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: yellow;
-  /* text-transform: uppercase; */
-}
-
 .nav-page {
   padding-top: 120px;
 }
-
-#back2top {
-  padding-top: 100px;
+.subs a,
+p[subs] {
+  color: lightskyblue;
 }
-
-p,
-a,
-h3 {
-  /* padding-left: 15px; */
-
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  /* font-style: italic; */
-  font-weight: normal;
-  color: white;
-}
-
-h4 {
-  padding-left: 15px;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-ol,
-ul,
-li {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  /* font-style: italic; */
-  font-weight: normal;
-  color: white;
-}
-
 .container {
   width: 90%;
-  /* max-width: 1100px; */
-  /* padding-top: 30px;
-  padding-bottom: 30px; */
-  /* padding-left: 70px;
-  padding-right: 70px; */
   margin: auto;
   position: relative;
 }
@@ -245,13 +225,12 @@ input[type="reset"]:hover {
   height: 300px;
   margin-bottom: 10px;
   overflow: hidden;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid lightskyblue;
 }
 
 .gallery-menu__item:hover {
-  box-shadow: 15px 15px 13px rgb(85 85 85 / 30%);
-  transition: 0.4s;
-  transform: translate(-1%, -1%);
+  border: none;
 }
 
 .gallery-menu__link img {
@@ -270,8 +249,6 @@ input[type="reset"]:hover {
   height: 17%;
   background-color: #f6f6f6;
   vertical-align: middle;
-  transition: 0.5s;
-  transition-timing-function: ease-out;
   text-align: center;
 }
 
@@ -294,12 +271,6 @@ input[type="reset"]:hover {
   transition: 0.2s;
   transition-timing-function: ease-out;
 }
-
-.gallery-menu__item a:hover .item__title {
-  height: 35%;
-  transition: 1s;
-}
-
 .repertoire-container {
   max-width: 960px;
   margin: 0 auto;
@@ -364,25 +335,43 @@ input[type="reset"]:hover {
   align-items: center;
 }
 
-footer {
+.footer-container {
   position: fixed;
   bottom: 0;
   width: 100vw;
+  background-color: rgb(44, 44, 44);
   height: 50px;
   text-align: center;
-  background-color: rgb(44, 44, 44);
   font-size: 14px;
   font-family: serif;
   font-weight: normal;
   color: orangered;
-  /* justify-content: center; */
   padding: 15px;
 }
-/* ul {
-  list-style-type: none;
-} */
+.footer-container::after {
+  content: "2022 Mr.Lightman";
+}
+
 header li {
   list-style: none;
   text-decoration: none;
-  /* color: white; */
+}
+
+label,
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: lightskyblue;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  color: orangered;
+  background-color: yellow;
+}
+
+label[file] {
+  color: orangered;
+  background-color: yellow;
 }
