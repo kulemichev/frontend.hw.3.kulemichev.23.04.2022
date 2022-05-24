@@ -76,7 +76,7 @@ header li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/assets/img/01.jpeg);
+  background-image: url(../img/01.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@ header li {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(/assets/img/brick-texture.png);
+  background-image: url(../img/brick-texture.png);
   background-size: 500px;
   background-repeat: repeat;
   background-position: center;
@@ -224,6 +224,7 @@ p[subs] {
   margin-top: 20px;
 }
 .repertoire-menu__item--child li {
+  line-height: 2em;
   position: relative;
 }
 .new::after {
@@ -232,7 +233,7 @@ p[subs] {
   background-color: orange;
   font-size: 90%;
   padding: 2px;
-  margin-left: 3px;
+  margin-left: 10px;
 }
 .marker-category--child {
   position: absolute;
@@ -318,8 +319,12 @@ button {
   color: orangered;
   background-color: yellow;
 }
-.contacts-info {
+.contacts-container {
+  justify-content: center;
   text-align: center;
+}
+.personal-survey {
+  text-align: left;
 }
 .footer-container {
   position: fixed;
